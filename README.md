@@ -32,12 +32,12 @@ Route | Auth | Purpose
 
 ***Deployment***
 from terminal (bash) : 
-$ls  #check that scripts folder exists
+`$ls`  #check that scripts folder exists
 
-$./scripts/build.sh
-$cd terraform
-$terraform init
-$terraform apply
+`$./scripts/build.sh`
+`$cd terraform`
+`$terraform init`
+`$terraform apply`
 
 
 ** what is still needed **
