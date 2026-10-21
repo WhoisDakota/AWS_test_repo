@@ -34,12 +34,12 @@ Route | Auth | Purpose
 from terminal (bash) : 
 `$ls`  #check that scripts folder exists
 
-`$./scripts/build.sh`
-`$cd terraform`
-`$terraform init`
+`$./scripts/build.sh` ->
+`$cd terraform` -> 
+`$terraform init`->
 `$terraform apply`
 
 
-** what is still needed **
+**what is still needed**
 - front end (will work with other teams on this)
 - I still have to write test cases
