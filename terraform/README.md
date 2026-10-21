@@ -6,3 +6,23 @@ I wanted to explore different infrastructure ideas. Many of the terraform files 
 
 **other deployment notes**
 - in variables.tf, currently set to region US-west 2, dont see a point in distributing test work across a bunch of areas.
+
+
+
+**explanation of folder contents**
+`versions.tf`	Which Terraform and provider versions to use, and the AWS region setup
+`variables.tf`	self defined Inputs (region, project name)
+`network.tf`	VPC, subnets, security groups
+`database.tf`	The RDS PostgreSQL instance
+`lambda.tf`	Lambda functions and their IAM roles
+`api.tf`	API Gateway
+`cognito.tf`	User login
+`frontend.tf`	S3 bucket and CloudFront
+`outputs.tf`	Values printed after apply (site URL)
+
+
+**commands for running terraform**
+`terraform init`      # download the AWS provider plugin (run once)
+`terraform plan`      # preview what would change, without changing anything
+`terraform apply`     # create or update the real infrastructure
+`terraform destroy`   # delete everything it created
