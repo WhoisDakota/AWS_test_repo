@@ -40,9 +40,12 @@ Route | Auth | Purpose
 
 
 ***Deployment***
+
+
 from terminal (bash) : 
 `$ls`  #check that scripts folder exists
 
+PLEASE CHECK: that you have terraform already installed `terraform –version`, if not, you can run it from bash using `$winget install HashiCorp.Terraform`.
 
 `$./scripts/build.sh` ->
 `$cd terraform` -> 
